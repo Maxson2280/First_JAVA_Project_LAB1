@@ -1,6 +1,7 @@
 package LABA1;
 
 public class Main {
+
     public static void main(String[] agrs) {
         Animal[] animals = {
                 new Cat("Persik"),
