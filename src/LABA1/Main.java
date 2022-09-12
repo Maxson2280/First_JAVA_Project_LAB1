@@ -14,6 +14,10 @@ public class Main {
             a.run(10);
             a.swim(5);
         }
-        System.out.println(Cat.count);
+        System.out.println("Всего живых котов " + Cat.countCat);
+        System.out.println(("Всего живых собак " + Dog.countDog));
+        System.out.println(("Всего живых ослов " + Donkey.countDonkey));
+        System.out.println(("Всего живых уток " + Duck.countDuck));
+        System.out.println(("Всего живых тигров " + Tiger.countTiger));
     }
 }
