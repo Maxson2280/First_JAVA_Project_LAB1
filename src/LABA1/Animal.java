@@ -14,10 +14,10 @@ public class Animal {
 
     }
     public void run (int distance){
-        System.out.println(name + "\tran\t" + distance);
+        System.out.println(name + "\trun\t" + distance);
     }
     public void swim (int distance2){
-        System.out.println(name + "\tswam\t" + distance2);
+        System.out.println(name + "\tswim\t" + distance2);
     }
 }
 
@@ -27,4 +27,3 @@ public class Animal {
 //        4. Создать один массив с животными и заставляете их по очереди пробежать дистанцию и
 //        проплыть.
 //        5. * Добавить подсчет созданных Домашних Котов , Тигров , Собак , Животных...
-//        КУК
