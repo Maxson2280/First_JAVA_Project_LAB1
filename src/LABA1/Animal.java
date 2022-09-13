@@ -12,6 +12,7 @@ public class Animal {
         this.name = name;
         this.runMaxDistance = runMaxDistance;
 
+
     }
     public void run (int distance){
         System.out.println(name + "\trun\t" + distance);

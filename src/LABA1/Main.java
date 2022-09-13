@@ -2,18 +2,22 @@ package LABA1;
 
 public class Main {
 
+    int distanseRun; // ввод с клавиатуры
+    int distanseSwim; // ввод с клавиатуры
     public static void main(String[] agrs) {
         Animal[] animals = {
-                new Cat("Persik"),// добавить параметр дистанцию
+                new Cat("Persik"), // добавить параметр дистанцию
                 new Dog("Bulbik"),
                 new Tiger("Tolik"),
                 new Duck("Donald"),
                 new Donkey("Ishak")
         };
-        for (Animal a : animals) {
+
+        for (Animal a : animals) { // перделать
             a.run(500);
             a.swim(50);
         }
+
 
         System.out.println("Всего живых котов " + Cat.countCat);
         System.out.println(("Всего живых собак " + Dog.countDog));
