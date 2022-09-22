@@ -1,9 +1,21 @@
 package LABA1;
 
-public class Main {
+import java.io.BufferedReader;
+import java.io.Console;
+import java.io.InputStreamReader;
+import java.util.Scanner;
 
-    int distanseRun; // ввод с клавиатуры
-    int distanseSwim; // ввод с клавиатуры
+public class Main {
+    Scaner in1 = new Scanner(System.in); // ввод с клавиатуры
+    System.out.println("Введите максимальную дистанцию бега");
+    
+    Scanner in2 = new Scanner(System.in) ; // ввод с клавиатуры
+    System.out.println("Введите максимальную дистанцию плавания")
+
+    int distanseRun = in1.nextInt();
+    
+    int distanseSwim = in2.nextInt();
+    
     public static void main(String[] agrs) {
         Animal[] animals = {
                 new Cat("Persik"), // добавить параметр дистанцию
