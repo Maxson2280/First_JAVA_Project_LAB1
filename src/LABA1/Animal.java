@@ -2,23 +2,41 @@ package LABA1;
 
 public class Animal {
 
-
     protected int tell;
+
+    protected int maxRun;
+    protected int maxSwim;
     String name;
 
-    protected int runMaxDistance;
 
-    public Animal(String name) {
+
+    public Animal(String name, int maxRun, int maxSwim) {
         this.name = name;
-        this.runMaxDistance = runMaxDistance;
 
+        this.maxRun = maxRun;
+
+        this.maxSwim = maxSwim;
 
     }
-    public void run (int distance){
-        System.out.println(name + "\trun\t" + distance);
+    public void run(int distance){
+        if(maxRun >= distance) {
+            this.maxRun = maxRun;
+            System.out.println(name + " пробежал " + distance);
+        }
+        else{
+            System.out.println(name + " не пробежал ");
+        }
+
     }
+
     public void swim (int distance2){
-        System.out.println(name + "\tswim\t" + distance2);
+        if(maxSwim >= distance2){
+            this.maxSwim  = maxSwim;
+            System.out.println(name + "  проплыл " + distance2);
+        }
+        else
+            System.out.println(name + " не проплыл ");
+
     }
 }
 
